@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task_wd_1</title>
+</head>
+<style>
+    /* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+.navbar:hover
+{
+    background-color:   #f1f1f1e3;
+    color: rgb(39, 40, 40);
+    transition: all;
+    transition-duration:2s;
+    font: verdana;
+    
+}
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-link {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Project Section */
+.project-section {
+    margin-top: 4rem;
+    padding: 3rem 0;
+    background-color: #f5f5f5;
+}
+
+.page-header {
+    color: #333;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+.project-card:hover
+{
+    height: 50%;
+    width: 32%;
+background-color: aqua;
+transition-duration: 1s;
+transition-timing-function: ease-in-out;
+transform:  translate(0% , -5% );
+z-index:10;
+
+}
+.project-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-subheading {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.btn-pink {
+    display: inline-block;
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* About Me Section */
+.about-me-section {
+    margin-top: 4rem;
+    padding: 3rem 0;
+    background-color: #333;
+    color: white;
+}
+
+.about-me-heading {
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-me-text {
+    display: none;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.about-me-section:hover .about-me-text {
+    display: block;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.about-me-text::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+   
+    width: 180px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.about-me-text::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #333 transparent transparent transparent;
+    z-index: -1;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <div class="nav-links">
+                <div class="nav-link">Home</div>
+                <div class="nav-link">Projects</div>
+                <div class="nav-link">About</div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="project-section">
+        <h1 class="page-header">Projects</h1>
+        <div class="project-container">
+            <div class="project-card">
+                <div class="overlay">
+                <div class="project-number">01</div>
+                <div class="project-heading">Project 1</div>
+                <div class="project-image">
+                    <img src="google.png" alt="Google Project">
+                </div>
+                <div class="project-subheading">Description 1</div>
+                <a href="https://www.google.com" target="_blank" class="btn-pink">Visit Google</a>
+                </div>
+            </div>
+            <div class="project-card" >
+                <div class="project-number">02</div>
+                <div class="project-heading">Project 2</div>
+                <div class="project-image">
+                    <img src="linkedin.png" alt="LinkedIn Project">
+                </div>
+                <div class="project-subheading">Description 2</div>
+                <a href="https://www.linkedin.com" target="_blank" class="btn-pink">Visit LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me-section">
+        <h1 class="about-me-heading">About Me</h1>
+        <div class="about-me-text">
+            I'm Prachi Rai, a Full Stack web developer. I have mastered the intermediate concepts of web development and I'm eager to enhance my skills even further. With a strong passion for coding. I am B.Tech CSE 4th year student of Babu Banarasi Das University Lucknow.My father’s name is Mr. Pawan Kumar Rai, he is a farmer. My mother’s name is Mrs.Neesha Rai, she is a housewife.
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 My Portfolio. All rights reserved.
+    </footer>
+
+<script>
+    
+const scrollDownButton = document.querySelector('.scroll-down-button');
+const aboutMeSection = document.querySelector('.about-me');
+
+scrollDownButton.addEventListener('click', () => {
+  aboutMeSection.scrollIntoView({ behavior: 'smooth' });
+});
+
+
+const aboutMeContent = document.querySelector('.about-me-content');
+const popup = document.querySelector('.popup');
+
+aboutMeContent.addEventListener('mouseover', () => {
+  popup.style.display = 'block';
+});
+
+aboutMeContent.addEventListener('mouseout', () => {
+  popup.style.display = 'none';
+});
+
+</script>
+</body>
+
+</html>
